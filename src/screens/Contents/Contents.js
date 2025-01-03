@@ -409,7 +409,6 @@ const VideoCarousel = ({
       <h2 className="mb-6 text-2xl font-semibold">Testimonials</h2>
 
       <div className="relative">
-        {/* Video Grid */}
         <div className="flex gap-4 overflow-hidden">
           {videos.slice(currentIndex, currentIndex + 2).map((video, index) => (
             <div
@@ -422,11 +421,8 @@ const VideoCarousel = ({
                 className="w-full h-full object-cover"
               />
 
-              {/* Play Button Overlay */}
               <div className="absolute inset-0 flex items-center justify-center">
-                {/* <button className="p-4 rounded-full bg-black/50 text-white transition-transform transform group-hover:scale-110"> */}
                 <PlayIcon size={24} />
-                {/* </button> */}
               </div>
             </div>
           ))}
